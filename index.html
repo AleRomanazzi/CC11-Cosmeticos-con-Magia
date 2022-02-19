@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="Imagenes/LogoCC11.jpeg">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
     <title>CC11 Cosmeticos con Magia</title>
   </head>
   <body class="header">
@@ -26,91 +30,106 @@
           </nav>  
         </header>
       </div>
-        <div class="medio">
-          <aside>
-            <section class="section__aside">
-              <ul>
-                <li>Jabones artesanales</li>
-                <li>Cremas artesanales</li>
-                <li>Brumas de aura</li>
-                <li>Box/Kits</li>
-              </ul>
-            </section>
-          </aside>
-          <article class="slider">
-            <figure>
-              <img class="imaPrin" src="Imagenes/principal.jpeg"/>
-              <img class="imaPrin" src="Imagenes/2.jpg" alt="">
-              <img class="imaPrin" src="Imagenes/3.jpg" alt="">
-            </figure>
-          </article>
+      <div class="medio">
+        <aside>
+          <section class="section__aside">
+            <ul>
+              <li>Jabones artesanales</li>
+              <li>Cremas artesanales</li>
+              <li>Brumas de aura</li>
+              <li>Box/Kits</li>
+            </ul>
+          </section>
+        </aside>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide mediotamaño" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./Imagenes/1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./Imagenes/2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./Imagenes/3.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="mid--prod"><h2>Algunos de nuestros productos</h2></div>
-          <div class="contenedor">
-            <div class="galeria">
-            <div class="imagen elemento1"><div class="card">
-              <div class="card-content">
-                <h2 class="card-content__title">
-                  Bruma de Aura
-                </h2>
-                <p class="card-content__body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, nam et?
-                </p>
-                <a href="#" class="button">Comprar</a>
-              </div>
+      </div>
+        </div>
+        <div class="mid--prode"><h2>Algunos de nuestros productos</h2></div>
+        <div class="galeria">
+          <div class="card" style="width: 18rem;">
+            <img src="./Imagenes/Galeria/1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-light colorc ">
+              <h5 class="card-title">Bruma de Sentimientos</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary boton">Comprar</a>
             </div>
           </div>
-            <div class="imagen elemento2"><div class="card">
-              <div class="card-content">
-                <h2 class="card-content__title">
-                  Bruma de Aura
-                </h2>
-                <p class="card-content__body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, nam et?
-                </p>
-                <a href="#" class="button">Comprar</a>
-              </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./Imagenes/Galeria/2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-light colorc ">
+              <h5 class="card-title">Bruma de Espíritu</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary boton">Comprar</a>
             </div>
           </div>
-            <div class="imagen elemento3"><div class="card">
-              <div class="card-content">
-                <h2 class="card-content__title">
-                  Bruma de Aura
-                </h2>
-                <p class="card-content__body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, nam et?
-                </p>
-                <a href="#" class="button">Comprar</a>
-              </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./Imagenes/Galeria/3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body text-light colorc ">
+              <h5 class="card-title">Bruma de Amor</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary boton">Comprar</a>
             </div>
           </div>
-            <div class="imagen elemento4"><div class="card">
-              <div class="card-content">
-                <h2 class="card-content__title">
-                  Bruma de Aura
-                </h2>
-                <p class="card-content__body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, nam et?
-                </p>
-                <a href="#" class="button">Comprar</a>
-              </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./Imagenes/Galeria/4.png" class="card-img-top" alt="...">
+            <div class="card-body text-light colorc ">
+              <h5 class="card-title">Bruma de Energía</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary boton">Comprar</a>
             </div>
           </div>
-          </div>
+        </div>
         </div>
         <br><br>
         <div class="mid">
           <div class="mid--prod">
-            <h2 >F.A.Q</h2>
+            <h2>F.A.Q</h2><br>
           </div>
           <h2 class="mid--faq">¿Quienes somos?</h2>
-          <h5 class="mid--faqL">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, labore nobis rem natus ipsa non magni, odio corrupti asperiores maxime quam quisquam ullam saepe incidunt adipisci laboriosam sit et pariatur molestiae a ducimus. Amet numquam quod officiis fuga modi hic!</h5>
+          <h5 class="mid--faqL">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, labore nobis rem natus ipsa non magni, odio corrupti asperiores maxime quam quisquam ullam saepe incidunt adipisci laboriosam sit et pariatur molestiae a ducimus. Amet numquam quod officiis fuga modi hic!</h5><br>
           <h2 class="mid--faq">Beneficios de nuestros productos</h2>
-          <h5 class="mid--faqL">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a deserunt nostrum atque itaque amet tenetur quo, eveniet, eaque rerum voluptate doloremque aliquid molestiae nobis delectus est nulla explicabo aut!</h5>
+          <h5 class="mid--faqL">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor a deserunt nostrum atque itaque amet tenetur quo, eveniet, eaque rerum voluptate doloremque aliquid molestiae nobis delectus est nulla explicabo aut!</h5><br>
           <h2 class="mid--faq">Lorem, ipsum.</h2>
-          <h5 class="mid--faqL">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nisi eveniet ut reiciendis? Dignissimos accusamus laboriosam ipsum, aliquid laborum distinctio sunt eos eveniet? Sint debitis culpa dolor dignissimos odit, molestias quas rerum!</h5>
+          <h5 class="mid--faqL">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nisi eveniet ut reiciendis? Dignissimos accusamus laboriosam ipsum, aliquid laborum distinctio sunt eos eveniet? Sint debitis culpa dolor dignissimos odit, molestias quas rerum!</h5><br>
           <h2 class="mid--faq">Lorem ipsum dolor sit.</h2>
-          <h5 class="mid--faqL">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus voluptatum a!</h5>
+          <h5 class="mid--faqL">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus voluptatum a!</h5><br>
         </div>
         <br> <br>
         <form class="formu">
@@ -140,7 +159,7 @@
     </div>
     <br><br>
     <footer class="section">
-      <div>
+      <div><h4>Redes Sociales</h4>
         <ul class="footWord">
           <li><a href="https://www.instagram.com/cc11_cosmeticos_con_magia/" target="_blank"><img src="./Imagenes/Iconos/instagram.png" alt=""> </a>Instagram</li>
           <li><a><img src="./Imagenes/Iconos/whatsapp.png" alt=""></a>Whatsapp</li>
@@ -156,5 +175,7 @@
       </div>
         <h3 class="h33">© CC11 Cosmeticos con magia</h3>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
