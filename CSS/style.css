@@ -161,6 +161,7 @@ aside{
     height: 10rem;
     transition: height 2s;
     background-color: burlywood;
+    cursor: pointer;
       
 } 
 
@@ -293,7 +294,7 @@ table{
     }
     .medio{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
@@ -330,7 +331,7 @@ table{
     }
     .medio{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
@@ -359,6 +360,7 @@ table{
         flex-wrap: wrap;
     }
 
+
 }
 @media (min-width:728px) {
     .galeria{
@@ -366,7 +368,7 @@ table{
     }
     .medio{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
@@ -435,7 +437,6 @@ table{
         display: flex;
         flex-direction: row;
     }
-    
     
 }
 
@@ -523,6 +524,7 @@ form{
 .formu .buttom:hover{
     background-color: #966536;
 }
+
 
 .tabla{
     border: 1px solid #966536;
