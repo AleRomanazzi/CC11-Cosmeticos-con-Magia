@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="Imagenes/LogoCC11.jpeg">
     <title>Tienda | CC11</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
 </head>
 <body class="header">
     <div id="principio">
@@ -32,66 +52,70 @@
             </header>
     </div>
     <br /><br /><br />
-      <h2 style="text-align: center;">Bienvenido a la tienda de CC11 Cosmeticos con Magia.</h2>
-      <br />
-    <div class="cent">
-      <table class="tabla">
-        <tr>
-           <th>Producto</th>
-           <th>Stock</th>
-           <th>Precio</th>
-           <th>Cantidad</th>
-        </tr>
-        <tr>
-            <td>Jabones artesanal</td>
-            <td>20/50</td>
-            <td>$$$</td>
-            <td>
-                <form>
-                    <label for="cantidad" name="cantidad">
-                        <input type="number" name="cantidad" min="1" max="50">
-                    </label>
-                </form>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>Crema artesanal</td>
-            <td>30/30</td>
-            <td>$$$</td>
-            <td>
-                <form>
-                    <label for="cantidad" name="cantidad">
-                        <input type="number" name="cantidad" min="1" max="50">
-                    </label>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Bruma de aura</td>
-            <td>22/40</td>
-            <td>$$$</td>
-            <td>
-                <form>
-                    <label for="cantidad" name="cantidad">
-                        <input type="number" name="cantidad" min="1" max="50">
-                    </label>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Vela aromática</td>
-            <td>15/30</td>
-            <td>$$$</td>
-            <td>
-                <form>
-                    <label for="cantidad" name="cantidad">
-                        <input type="number" name="cantidad" min="1" max="50">
-                    </label>
-                </form>
-            </td>
-        </tr>
-      </table>
+    <h2 style="text-align: center;">Bienvenido a la tienda de CC11 Cosmeticos con Magia.</h2>
+    <br />
+    
+    <div class="container py-3">
+      <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <p class="fs-5 text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, tempore sed? Amet deserunt dolorem doloremque, est at beatae consequatur, maxime, eveniet obcaecati asperiores dignissimos vel!</p>
+        </div>
+      </header>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3 bg-color-cc11 text-white">
+                <h4 class="my-0 fw-normal">Caja Magica #1</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$1500</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1 Crema para manos</li>
+                  <li>2 Jabones frutales</li>
+                  <li>1 Bruma de Aura</li>
+                  <li>1 Vela pequeña</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 bg-color-cc11 text-white">
+                <h4 class="my-0 fw-normal">Caja Magica #2</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$2300</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>3 Crema para manos</li>
+                  <li>4 Jabones frutales</li>
+                  <li>2 Bruma de Aura</li>
+                  <li>1 Vela mediana</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-white bg-color-cc11 border-primary ">
+                <h4 class="my-0 fw-normal">Caja Magica #3 <span class="badge bg-primary">Nuevo</span></h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$3200</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>4 Crema para manos</li>
+                  <li>6 Jabones frutales</li>
+                  <li>4 Bruma de Aura</li>
+                  <li>2 Velas medianas</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <br /><br />
     <footer class="section">

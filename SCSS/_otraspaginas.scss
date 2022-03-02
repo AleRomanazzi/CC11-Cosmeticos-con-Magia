@@ -1,21 +1,5 @@
-.cent{
-    display: flex;
-    justify-content: center;
-    table{
-        text-align: center;
-        .tabla{
-            border: 1px solid $colorMarronO;
-            @include ancho($width);
-            height: 60vh;
-            td{
-                padding: 10px;
-            }
-            tr th{
-                text-transform: uppercase;
-            }
-        }
-    }
-}
+
+$tienda: #FBAB7E;
 
 .navegacion{
     display: flex;
@@ -31,4 +15,8 @@
     h4{
         font-weight: 500;
     }
+}
+
+.bg-color-cc11{
+    background-color: $tienda;
 }
