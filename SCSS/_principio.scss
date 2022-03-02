@@ -1,0 +1,51 @@
+#principio{
+    border: 1px solid $colorMarronO;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 20%, #FF5ACD 120%);
+    #princi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #imagenCC{
+            width: 20rem; 
+            height: 10rem; 
+            display: flex;
+        }
+    }
+    header{
+        margin: 1px;
+        display: flex;
+        align-self:  center;
+        padding-right: 3rem;
+        .ul{
+            list-style: none;
+            display: flex;
+            margin-right: 5rem;
+            a{
+                color: white;
+                font-weight: 500;
+                font-size: 23px;
+                text-decoration: none;
+                border-bottom: 1px solid white;
+                display: flex;
+                margin: 0.5rem 1rem 0.5rem 1rem;
+                padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+                justify-content: space-around;
+                &:hover{
+                    color: white;
+                    font-weight: 600;
+                    transform: scale(1.2,1.2);
+                    &:active{
+                        border-top: 1px solid $colorMarronO;
+                        border-bottom: 1px solid $colorMarronO;
+                    }
+                }
+            }
+        }
+    }    
+}

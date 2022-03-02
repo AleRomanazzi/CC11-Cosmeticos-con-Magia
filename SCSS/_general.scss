@@ -1,0 +1,184 @@
+/*Variable Local*/
+$fuenteMain: "Roboto Serif", sans-serif;
+$sombra: drop-shadow(8px 8px 10px grey);
+
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $fuenteMain;
+}
+body{
+    background-color: $colorFondo;
+    .header{
+        font-family: $fuenteMain; 
+    }
+}
+h2{
+    color: $colorMarronO;
+    font-family: $fuenteMain;
+}
+
+.mediotamaño{
+    display: flex;
+    width: $width-20;
+    justify-content: center;
+    border: 2px solid $colorMarronO;
+    filter: $sombra;
+}
+
+.lista2{
+    color: rosybrown;
+}
+
+@media (min-width: 100px){
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .medio{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #principio{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+    .ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid--faqL{
+        padding: 0;
+    }
+    .footWord{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+@media (min-width: 520px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .medio{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #principio{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid--faqL{
+        padding: 0;
+    }
+    .footWord{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+}
+@media (min-width:728px) {
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .medio{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #principio{
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+        justify-content: center;
+        margin: 0;
+    }
+    .ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-right: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid--faqL{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .footWord {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .medio{
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-direction: row;
+        column-gap: 2rem;
+        width: $width-20;
+        margin: 2rem auto 2rem auto;
+    }
+    #principio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items:center ;
+        justify-content: space-between;
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+        margin-right: 4rem;
+    }
+    .section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .mid--faqL{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .footWord {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
