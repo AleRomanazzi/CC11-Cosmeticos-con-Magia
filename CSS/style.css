@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Variables Globales*/
+/*Mixins*/
 /*Variable Local*/
 /*CSS*/
 * {
@@ -10,7 +11,6 @@
 
 body {
   background-color: antiquewhite;
-  
 }
 body .header {
   font-family: "Roboto Serif", sans-serif;
@@ -313,7 +313,6 @@ h2 {
 .galeria .card:hover {
   transform: scale(1.05);
 }
-
 .galeria .colorc {
   background-color: #967d62;
 }

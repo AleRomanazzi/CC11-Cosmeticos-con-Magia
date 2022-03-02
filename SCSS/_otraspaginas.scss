@@ -5,7 +5,7 @@
         text-align: center;
         .tabla{
             border: 1px solid $colorMarronO;
-            width: $width;
+            @include ancho($width);
             height: 60vh;
             td{
                 padding: 10px;

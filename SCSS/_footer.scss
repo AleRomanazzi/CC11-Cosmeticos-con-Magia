@@ -71,7 +71,7 @@
 }
     
 .h33{
-    width: $width;
+    @include ancho($width);
     grid-area: C;
     grid-column: 2;
     grid-row: 1;
