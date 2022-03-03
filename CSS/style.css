@@ -274,10 +274,15 @@ h2 {
   background-image: linear-gradient(90deg, #FBAB7E 0%, #F7CE68 100%);
   color: white;
 }
+.medio aside .section__aside ul {
+  padding: 0;
+}
 .medio aside .section__aside ul li {
   line-height: 5;
   padding-right: 2rem;
+  padding-left: 2rem;
   text-align: center;
+  list-style: none;
 }
 .medio aside .section__aside ul li:hover {
   color: white;

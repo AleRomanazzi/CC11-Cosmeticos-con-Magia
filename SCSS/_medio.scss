@@ -13,18 +13,24 @@
             background-color: #FBAB7E;
             background-image: linear-gradient(90deg, #FBAB7E 0%, #F7CE68 100%);
             color: white;
-            ul li{
-                line-height: 5;
-                padding-right: 2rem;
-                text-align: center;
-                &:hover { 
-                    color: white;
-                    height: 10rem;
-                    transition: height 2s;
-                    background-color: burlywood;
-                    cursor: pointer;
-                } 
+            ul {
+                padding: 0;
+                li{
+                    line-height: 5;
+                    padding-right: 2rem;
+                    padding-left: 2rem;
+                    text-align: center;
+                    list-style: none;
+                    &:hover { 
+                        color: white;
+                        height: 10rem;
+                        transition: height 2s;
+                        background-color: burlywood;
+                        cursor: pointer;
+                    } 
+                }
             }
+            
         }
     }
 }
