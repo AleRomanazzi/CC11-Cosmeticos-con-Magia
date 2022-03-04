@@ -50,8 +50,8 @@
     @include ancho($width - 20);
     margin: auto;
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
     row-gap: 1rem;
     background-color: #FBAB7E;
     border: 1px solid $colorMarronO;
@@ -94,8 +94,8 @@
         font-size: 28px;
     }
     .mid--faqL{
-        padding-left: 250px;
-        padding-right: 250px;
+        padding-left: 8rem;
+        padding-right: 8rem;
         font-size: 15px;
     }
 }

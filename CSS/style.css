@@ -35,20 +35,20 @@ h2 {
 
 @media (min-width: 100px) {
   .galeria {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .medio {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
 
   #principio {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: wrap row;
     justify-content: center;
   }
 
@@ -56,15 +56,11 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: 0;
-  }
-
-  .section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mid--faqL {
-    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0rem;
+    font-size: 20px;
   }
 
   .footWord {
@@ -77,35 +73,37 @@ h2 {
 }
 @media (min-width: 520px) {
   .galeria {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .medio {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
 
   #principio {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: wrap row;
     justify-content: center;
   }
 
   .ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 0rem;
+    font-size: 20px;
   }
 
   .section {
     display: flex;
     flex-direction: column;
-  }
-
-  .mid--faqL {
-    padding: 0;
   }
 
   .footWord {
@@ -118,39 +116,38 @@ h2 {
 }
 @media (min-width: 728px) {
   .galeria {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .medio {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
 
   #principio {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-flow: wrap row;
     justify-content: center;
-    margin: 0;
+    font-size: 23px;
   }
 
   .ul {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 0rem;
+    font-size: 20px;
   }
 
   .section {
     display: flex;
     flex-direction: column;
-  }
-
-  .mid--faqL {
-    padding-left: 250px;
-    padding-right: 250px;
   }
 
   .footWord {
@@ -160,7 +157,8 @@ h2 {
 }
 @media (min-width: 1024px) {
   .galeria {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
   }
 
   .medio {
@@ -177,25 +175,21 @@ h2 {
   #principio {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    font-size: 23px;
   }
 
   .ul {
     display: flex;
     flex-direction: row;
-    margin-right: 4rem;
+    margin-right: 5rem;
   }
 
   .section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .mid--faqL {
-    padding-left: 250px;
-    padding-right: 250px;
   }
 
   .footWord {
@@ -208,7 +202,6 @@ h2 {
   padding: 0.5rem;
   display: flex;
   flex-flow: wrap row;
-  justify-content: space-between;
   align-items: center;
   background-color: #FBDA61;
   background-image: linear-gradient(45deg, #FBDA61 20%, #FF5ACD 120%);
@@ -227,17 +220,16 @@ h2 {
   margin: 1px;
   display: flex;
   align-self: center;
-  padding-right: 3rem;
 }
 #principio header .ul {
   list-style: none;
   display: flex;
-  margin-right: 5rem;
+  padding-left: 0;
 }
 #principio header .ul a {
   color: white;
   font-weight: 500;
-  font-size: 23px;
+  font-size: 20px;
   text-decoration: none;
   border-bottom: 1px solid white;
   display: flex;
@@ -307,8 +299,8 @@ h2 {
   width: 80%;
   margin: auto;
   padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
   row-gap: 1rem;
   background-color: #FBAB7E;
   border: 1px solid #966536;
@@ -352,8 +344,8 @@ h2 {
   font-size: 28px;
 }
 .mid .mid--faqL {
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 8rem;
+  padding-right: 8rem;
   font-size: 15px;
 }
 
@@ -400,7 +392,6 @@ form {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-row: 500px;
   grid-template-areas: "contact" "C" "redes";
 }
 .section h4 {

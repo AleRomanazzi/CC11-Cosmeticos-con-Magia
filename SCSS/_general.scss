@@ -19,6 +19,8 @@ h2{
     font-family: $fuenteMain;
 }
 
+
+
 .mediotamaño{
     display: flex;
     @include ancho($width - 20);
@@ -33,31 +35,30 @@ h2{
 
 @media (min-width: 100px){
     .galeria {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .medio{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
     }
     #principio{
         display: flex;
-        flex-direction: column;
-        align-items:center ;
+        flex-flow: wrap row;
         justify-content: center;
+        
     }
     .ul{
         display: flex;
         flex-direction: column;
         margin: 0;
-    }
-    .section{
-        display: flex;
-        flex-direction: column;
-    }
-    .mid--faqL{
-        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0rem;
+        font-size: 20px;
     }
     .footWord{
         display: flex;
@@ -70,30 +71,34 @@ h2{
 }
 @media (min-width: 520px){
     .galeria{
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
     .medio{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
     }
     #principio{
         display: flex;
-        flex-direction: column;
-        align-items:center ;
+        flex-flow: wrap row;
         justify-content: center;
     }
     .ul{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-right: 0rem;
+        font-size: 20px;
     }
     .section{
         display: flex;
         flex-direction: column;
-    }
-    .mid--faqL{
-        padding: 0;
     }
     .footWord{
         display: flex;
@@ -107,35 +112,36 @@ h2{
 }
 @media (min-width:728px) {
     .galeria{
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     .medio{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
     }
     #principio{
         display: flex;
-        flex-direction: row;
-        align-items:center ;
+        flex-flow: wrap row;
         justify-content: center;
-        margin: 0;
+        font-size: 23px;
     }
     .ul{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        flex-direction: row;
-        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-right: 0rem;
+        font-size: 20px;
     }
     .section{
         display: flex;
         flex-direction: column;
     }
-    .mid--faqL{
-        padding-left: 250px;
-        padding-right: 250px;
-    }
+
     .footWord {
         display: flex;
         flex-direction: row;
@@ -145,7 +151,8 @@ h2{
 
 @media (min-width: 1024px){
     .galeria{
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-direction: row;
     }
     .medio{
         display: flex;
@@ -159,22 +166,19 @@ h2{
     #principio{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items:center ;
         justify-content: space-between;
+        font-size: 23px;
     }
     .ul{
         display: flex;
         flex-direction: row;
-        margin-right: 4rem;
+        margin-right: 5rem;
     }
     .section{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
-    }
-    .mid--faqL{
-        padding-left: 250px;
-        padding-right: 250px;
     }
     .footWord {
         display: flex;
