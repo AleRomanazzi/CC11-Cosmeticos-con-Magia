@@ -15,19 +15,24 @@
             color: white;
             ul {
                 padding: 0;
-                li{
-                    line-height: 5;
-                    padding-right: 2rem;
-                    padding-left: 2rem;
-                    text-align: center;
+                li {
                     list-style: none;
-                    &:hover { 
+                    line-height: 5;
+                        padding-right: 2rem;
+                        padding-left: 2rem;
+                        text-align: center;
+                        list-style: none;
+                        &:hover { 
+                            color: white;
+                            height: 10rem;
+                            transition: height 2s;
+                            background-color: burlywood;
+                            cursor: pointer;
+                        } 
+                    a{
                         color: white;
-                        height: 10rem;
-                        transition: height 2s;
-                        background-color: burlywood;
-                        cursor: pointer;
-                    } 
+                        text-decoration: none;
+                    }
                 }
             }
             

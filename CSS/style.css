@@ -270,6 +270,7 @@ h2 {
   padding: 0;
 }
 .medio aside .section__aside ul li {
+  list-style: none;
   line-height: 5;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -282,6 +283,10 @@ h2 {
   transition: height 2s;
   background-color: burlywood;
   cursor: pointer;
+}
+.medio aside .section__aside ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .mid--prode {
