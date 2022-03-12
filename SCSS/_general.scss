@@ -20,15 +20,6 @@ h2{
 }
 
 
-
-.mediotamaño{
-    display: flex;
-    @include ancho($width - 20);
-    justify-content: center;
-    border: 2px solid $colorMarronO;
-    filter: $sombra;
-}
-
 .lista2{
     color: rosybrown;
 }
@@ -41,8 +32,24 @@ h2{
     }
     #principio{
         display: flex;
-        flex-flow: wrap row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .medio{
+        display: flex;
+        flex-direction: column-reverse; 
+        flex-wrap: wrap;
+        width: 100%;
+        aside{
+            ul {
+                li{
+                padding-left: 4rem;
+                padding-right: 4rem;
+                }
+            }
+        }
     }
 
     .ul{
@@ -87,10 +94,23 @@ h2{
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    .medio{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        aside{
+            ul {
+                li{
+                padding-left: 8rem;
+                padding-right: 8rem;
+                }
+            }
+        }
+    }
     #principio{
         display: flex;
-        flex-flow: wrap row;
+        flex-direction: column;
         justify-content: center;
     }
     .ul{
@@ -138,6 +158,22 @@ h2{
         flex-flow: wrap row;
         justify-content: center;
         font-size: 23px;
+    }
+    .medio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 80%;
+        aside{
+            ul {
+                li{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                line-height: 3;
+                }
+            }
+        }
     }
     .ul{
         display: flex;
@@ -190,6 +226,23 @@ h2{
         justify-content: space-between;
         font-size: 23px;
     }
+
+    .medio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 80%;
+        aside{
+            ul {
+                li{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                }
+            }
+        }
+    }
+
     .ul{
         display: flex;
         flex-direction: row;
