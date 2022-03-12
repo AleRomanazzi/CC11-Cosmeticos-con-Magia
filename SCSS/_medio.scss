@@ -98,8 +98,8 @@
         font-size: 28px;
     }
     .mid--faqL{
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         font-size: 15px;
     }
 }
@@ -120,8 +120,7 @@ form{
     font-weight: 500;
     background-color: #FBAB7E;
     input,textarea{
-        @include ancho($width - 60);
-        padding: 0.7em;
+        padding: 1em;
         border: none;
     }
     .buttom{

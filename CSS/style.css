@@ -31,6 +31,11 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .mid h5 .mid--faqL {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   #principio {
     display: flex;
     flex-direction: column;
@@ -93,6 +98,11 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .mid h5 .mid--faqL {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .medio {
     display: flex;
     flex-direction: column-reverse;
@@ -148,6 +158,11 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .mid h5 .mid--faqL {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   #principio {
@@ -209,6 +224,11 @@ h2 {
   .galeria {
     display: flex;
     flex-direction: row;
+  }
+
+  .mid h5 .mid--faqL {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   #principio {
@@ -407,8 +427,8 @@ h2 {
   font-size: 28px;
 }
 .mid .mid--faqL {
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   font-size: 15px;
 }
 
@@ -429,8 +449,7 @@ form {
   background-color: #FBAB7E;
 }
 .formu input, .formu textarea {
-  width: 40%;
-  padding: 0.7em;
+  padding: 1em;
   border: none;
 }
 .formu .buttom {
