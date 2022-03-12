@@ -44,6 +44,7 @@ h2 {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
   }
   .medio aside ul li {
     padding-left: 4rem;
@@ -72,8 +73,9 @@ h2 {
     padding: 1rem;
   }
   .section .contacto ul li {
-    display: grid;
+    display: flex;
     justify-items: center;
+    align-items: center;
   }
   .section .h33 {
     grid-row: 3;
@@ -96,6 +98,7 @@ h2 {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
   }
   .medio aside ul li {
     padding-left: 8rem;
@@ -130,8 +133,9 @@ h2 {
     padding: 1rem;
   }
   .section .contacto ul li {
-    display: grid;
+    display: flex;
     justify-items: center;
+    align-items: center;
   }
   .section .h33 {
     grid-row: 3;
@@ -188,8 +192,9 @@ h2 {
     padding: 1rem;
   }
   .section .contacto ul li {
-    display: grid;
+    display: flex;
     justify-items: center;
+    align-items: center;
   }
   .section .h33 {
     grid-row: 3;
@@ -240,6 +245,11 @@ h2 {
   .section .contacto {
     grid-row: 1;
     grid-column: 3;
+  }
+  .section .contacto ul li {
+    display: flex;
+    justify-items: center;
+    align-items: center;
   }
   .section .h33 {
     grid-row: 1;

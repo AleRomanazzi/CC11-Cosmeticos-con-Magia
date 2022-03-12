@@ -42,6 +42,7 @@ h2{
         flex-direction: column-reverse; 
         flex-wrap: wrap;
         width: 100%;
+        justify-content: space-around;
         aside{
             ul {
                 li{
@@ -73,8 +74,9 @@ h2{
             grid-column: 2;
             padding: 1rem;
             ul li{
-                display: grid;
+                display: flex;
                 justify-items: center;
+                align-items: center;
             }
         }
         .h33{
@@ -99,6 +101,7 @@ h2{
         flex-direction: column-reverse;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: space-around;
         aside{
             ul {
                 li{
@@ -134,8 +137,9 @@ h2{
             grid-column: 2;
             padding: 1rem;
             ul li{
-                display: grid;
+                display: flex;
                 justify-items: center;
+                align-items: center;
             }
         }
         .h33{
@@ -196,8 +200,9 @@ h2{
             grid-column: 2;
             padding: 1rem;
             ul li{
-                display: grid;
+                display: flex;
                 justify-items: center;
+                align-items: center;
             }
         }
         .h33{
@@ -256,6 +261,11 @@ h2{
         .contacto{
             grid-row: 1;
             grid-column: 3;
+            ul li{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+            }
         }
         .h33{
             grid-row: 1;
