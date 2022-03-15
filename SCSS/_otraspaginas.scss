@@ -1,0 +1,22 @@
+
+$tienda: #FBAB7E;
+
+.navegacion{
+    display: flex;
+    grid-area: nave;
+    justify-content: center;
+    ul li{
+        font-size: 16px;
+        display: flex;
+        flex-direction:column;
+        color: black;
+        font-weight: 300;
+    }
+    h4{
+        font-weight: 500;
+    }
+}
+
+.bg-color-cc11{
+    background-color: $tienda;
+}

@@ -1,0 +1,352 @@
+/*Variable Local*/
+$fuenteMain: "Roboto Serif", sans-serif;
+$sombra: drop-shadow(8px 8px 10px grey);
+
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $fuenteMain;
+}
+body{
+    background-color: $colorFondo;
+    .header{
+        font-family: $fuenteMain; 
+    }
+}
+h2{
+    color: $colorMarronO;
+    font-family: $fuenteMain;
+}
+
+
+.lista2{
+    color: rosybrown;
+}
+
+@media (min-width: 100px){
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mid{
+      h5{
+       .mid--faqL{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        } 
+        }    
+    }
+
+    #principio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .medio{
+        display: flex;
+        flex-direction: column-reverse; 
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        row-gap: 2rem;
+        aside{
+            ul {
+                li{
+                padding-left: 4rem;
+                padding-right: 4rem;
+                }
+            }
+        }
+    }
+
+    .formu {
+        input, textarea{
+            padding: 1em;
+            border: none;
+            width: 70%;
+        }
+    }
+
+    .ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0rem;
+        font-size: 20px;
+    }
+    .section{
+        .footWord{
+            grid-row: 1;
+            grid-column: 2;
+            padding: 1rem;
+        }
+        .contacto{
+            grid-row: 2;
+            grid-column: 2;
+            padding: 1rem;
+            ul li{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+        .h33{
+            grid-row: 3;
+            grid-column: 2;
+            padding: 1rem;
+        }
+        ul{
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: 520px){
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mid{
+        h5{
+         .mid--faqL{
+              padding-left: 2rem;
+              padding-right: 2rem;
+          } 
+          }    
+      }
+
+    .medio{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        row-gap: 2rem;
+        aside{
+            ul {
+                li{
+                padding-left: 8rem;
+                padding-right: 8rem;
+                }
+            }
+        }
+    }
+    #principio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formu {
+        input, textarea{
+            padding: 1em;
+            border: none;
+            width: 55%;
+        }
+    }
+
+    .ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-right: 0rem;
+        font-size: 20px;
+    }
+    .section{
+        .footWord{
+            grid-row: 1;
+            grid-column: 2;
+            padding: 1rem;
+        }
+        .contacto{
+            grid-row: 2;
+            grid-column: 2;
+            padding: 1rem;
+            ul li{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+        .h33{
+            grid-row: 3;
+            grid-column: 2;
+            padding: 1rem;
+        }
+    }
+}
+
+@media (min-width:728px) {
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .mid{
+        h5{
+         .mid--faqL{
+              padding-left: 6rem;
+              padding-right: 6rem;
+          } 
+          }    
+      }
+
+    #principio{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        font-size: 23px;
+    }
+
+    .formu {
+        input, textarea{
+            padding: 1em;
+            border: none;
+            width: 45%;
+        }
+    }
+
+    .medio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        row-gap: 0;
+        width: 80%;
+        aside{
+            ul {
+                li{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                line-height: 3;
+                }
+            }
+        }
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-right: 0rem;
+        font-size: 20px;
+    }
+    .section{
+        .footWord{
+            grid-row: 1;
+            grid-column: 2;
+            padding: 1rem;
+        }
+        .contacto{
+            grid-row: 2;
+            grid-column: 2;
+            padding: 1rem;
+            ul li{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+        .h33{
+            grid-row: 3;
+            grid-column: 2;
+            padding: 1rem;
+        }
+        ul{
+            padding: 0;
+        }
+    }
+
+}
+
+@media (min-width: 1024px){
+    .galeria{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mid{
+        h5{
+         .mid--faqL{
+              padding-left: 7rem;
+              padding-right: 7rem;
+          } 
+        }    
+    }
+
+    .formu {
+        input, textarea{
+            padding: 1em;
+            border: none;
+            width: 40%;
+        }
+    }
+
+    #principio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center ;
+        justify-content: space-between;
+        font-size: 23px;
+    }
+
+    .medio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        row-gap: 0;
+        width: 80%;
+        aside{
+            ul {
+                li{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                }
+            }
+        }
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+        margin-right: 5rem;
+    }
+    .section{
+        .footWord{
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .contacto{
+            grid-row: 1;
+            grid-column: 3;
+            ul li{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+        .h33{
+            grid-row: 1;
+            grid-column: 2;
+        }
+    }
+    
+}
+

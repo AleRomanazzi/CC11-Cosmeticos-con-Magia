@@ -1,0 +1,12 @@
+/*Variables Globales*/
+
+$colorFondo : antiquewhite;
+$colorMarronO: #966536;
+$width: 100%;
+
+
+/*Mixins*/
+
+@mixin ancho($width){
+    width: $width;
+}
