@@ -50,10 +50,17 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    row-gap: 2rem;
   }
   .medio aside ul li {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .formu input, .formu textarea {
+    padding: 1em;
+    border: none;
+    width: 70%;
   }
 
   .ul {
@@ -109,6 +116,7 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    row-gap: 2rem;
   }
   .medio aside ul li {
     padding-left: 8rem;
@@ -119,6 +127,12 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .formu input, .formu textarea {
+    padding: 1em;
+    border: none;
+    width: 55%;
   }
 
   .ul {
@@ -172,11 +186,18 @@ h2 {
     font-size: 23px;
   }
 
+  .formu input, .formu textarea {
+    padding: 1em;
+    border: none;
+    width: 45%;
+  }
+
   .medio {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    row-gap: 0;
     width: 80%;
   }
   .medio aside ul li {
@@ -231,6 +252,12 @@ h2 {
     padding-right: 7rem;
   }
 
+  .formu input, .formu textarea {
+    padding: 1em;
+    border: none;
+    width: 40%;
+  }
+
   #principio {
     display: flex;
     flex-direction: row;
@@ -245,6 +272,7 @@ h2 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    row-gap: 0;
     width: 80%;
   }
   .medio aside ul li {
@@ -453,7 +481,6 @@ form {
   border: none;
 }
 .formu .buttom {
-  width: 20%;
   background-color: chocolate;
   text-transform: uppercase;
   margin-top: 1rem;
